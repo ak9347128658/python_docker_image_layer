@@ -106,7 +106,7 @@ Authenticate Docker to AWS ECR:
 Run the following command to authenticate Docker to your ECR registry. Replace `aws_region` with your region.
 
 ```bash
-aws ecr get-login-password --region aws_region | docker login --username AWS --password-stdin <aws_account_id>.dkr.ecr.aws_region.amazonaws.com
+aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 851725421815.dkr.ecr.ap-south-1.amazonaws.com
 ```
 
 Tag the Docker image to match the ECR repository name:
