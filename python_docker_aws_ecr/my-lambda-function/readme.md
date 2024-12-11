@@ -112,7 +112,7 @@ aws ecr get-login-password --region ap-south-1 | docker login --username AWS --p
 Tag the Docker image to match the ECR repository name:
 
 ```bash
-docker tag my-lambda-image:latest <aws_account_id>.dkr.ecr.aws_region.amazonaws.com/my-lambda-repo:latest
+docker tag my-lambda-image:latest 851725421815.dkr.ecr.ap-south-1.amazonaws.com/my-lambda-repo:latest
 ```
 
 Push the Docker image to ECR:
@@ -120,7 +120,7 @@ Push the Docker image to ECR:
 Now push the Docker image to your ECR repository:
 
 ```bash
-docker push <aws_account_id>.dkr.ecr.aws_region.amazonaws.com/my-lambda-repo:latest
+docker push 851725421815.dkr.ecr.ap-south-1.amazonaws.com/my-lambda-repo:latest
 ```
 
 ## Step 5: Deploy the Docker Image to AWS Lambda
