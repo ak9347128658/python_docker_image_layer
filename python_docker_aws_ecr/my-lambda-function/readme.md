@@ -67,6 +67,13 @@ In the directory where the Dockerfile and `lambda_function.py` are located, run 
 
 ```bash
 docker build -t my-lambda-image .
+
+```
+
+or
+
+```bash
+docker build --no-cache -t my-lambda-image .
 ```
 
 Run the Docker container locally to test if everything is working as expected:
